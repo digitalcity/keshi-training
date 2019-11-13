@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>liu宇</title>
+<link rel="stylesheet" href="iconfont.css">
+	<style>
+   ul,h1,h2,h3,h4,h5,h6,p{
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 0;
+      list-style-type: none;
+   }
+   .container{
+   	width: 375px;
+   background-color: #77f;
+   margin-left: auto;
+   margin-right: auto;
+   }
+   .content{
+   	background-color: #f4f4f4;
+   }
+   .navbar{
+   	height: 44px;
+    background-color: red;
+    position: relative;
+    line-height: 44px;
+   }
+   .dingwei{
+    float: left;
+    font-size: 18px;
+    margin-left: 10px;
+    color: #fff;
+   }
+   .search{
+    float: right;
+    margin-right: 25px;
+    color: #fff;
+   }
+   .logo{
+    position: absolute;
+    width: 65px;
+     height: 20px;
+     top: 6px;
+     left: 155px;
+       }
+   .banner{
+    height: 203px;
+   }
+   img{
+   	width: 100%;
+   }
+   .newtask{
+   	height: 135px;
+   }
+   .newtask>div {
+   width: 180px;
+   height: 107px;
+   background-color: #fff;
+   margin-left: 5px;
+   margin-right: 5px;
+   float: left;
+   }
+   .newtask p{
+    font-size: 14px;
+    margin-left: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   } 
+   .newtask .purlish{
+    margin-bottom: 7px;
+   }
+   .newtask .purlish .face{
+   width: 20px;
+   height: 20px;
+    vertical-align: middle;
+    margin-left: 2px;
+   }
+   .newtask  b{
+    font-size: 14px;
+    vertical-align: middle;
+   }
+   .newtask .purlish .sex{
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+   }
+   .newtask .money{
+    width: 20px;
+    margin-left:15px;
+    vertical-align: middle;
+   }
+   .newtask time{
+    font-size: 6px;
+    font-weight: normal;
+    margin-left: 3px;
+    font-family: "楷体";
+    margin-top: 20px;
+   }
+   .newtask .number{
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+   }
+   .newtask .position{
+    width: 8px;
+    height: 10px;
+    margin-left: 50px;
+     }
+     .newtask span{
+        font-size: 8px;
+        font-weight: normal;
+        font-family: "楷体";
+     }
+     .newtask .xingbake .picture{
+     width: 65px;
+     height: 30px;
+     margin-left: 10px;
+     }
+     .newtask .messages p{
+      margin-bottom: 2px;
+     }
+     .newtask .people .face{
+      width: 18px;
+      height: 18px;
+      margin-left: 10px;
+      vertical-align: middle;
+     }
+     .newtask .people b{
+      font-family: "微软雅黑";
+      font-size: 12px;
+     }
+     .newtask .people .anran_sex{
+      width: 6px;
+      height: 6px;
+     }
+     .newtask .people .anran_money{
+      height: 20px;
+      width: 20px;
+      margin-left: 28px;
+      vertical-align: middle;
+     }
+     .newtask .people .anran_number{
+      font-size: 14px;
+      font-weight: bold;
+      vertical-align: middle;
+     }
+     .newtask .anran_time{
+    font-size: 2px;
+    font-weight: normal;
+    font-family: "楷体";
+    height: 10px;
+   }
+   .newtask .anran_time time{
+     margin-left: 12px;
+   }
+   .newtask .anran_time .anran_position{
+    width: 8px;
+    height: 10px;
+    margin-left: 8px;
+    margin-right: 0;
+   }
+   .newtask :last-child{
+    margin-left: 0;
+   }
+   h3{
+   	font-family: "微软雅黑";
+   	font-size: 18px;
+   	color: #ea0606;
+   	text-align: center;
+   	font-weight: normal;
+   	margin-bottom: 3px;
+   	margin-top: 0;
+   }
+   .today{
+   	height: 192px;
+   	background-color: #f4f4f4;
+   }
+   .today ul.pic li{
+      height: 105px;
+      float: left;
+      margin-right: 3px;
+      margin-bottom: 3px;
+   }
+  .today ul.pic li:first-child{
+      width: 108px;
+   }
+  .today ul.pic li:nth-child(2){
+      width: 165px;
+   }
+  .today ul.pic li:nth-child(3){
+      width: 94px;
+      margin-right: 0;
+   }
+   .today h4{
+      font-family: ,"微软雅黑";
+      font-size:6px;
+      color: #a7a7a7;
+      margin-left: 12px;
+      font-weight: normal;
+   }
+   .today span{
+      font-family:"微软雅黑";
+      font-size:9px;
+      color: #aaaaaa;
+      margin-left: 15px;
+   }
+   .today-bottom li{
+    float: left;
+  margin-right: 15px;
+  margin-top: 2px;
+   }
+   .today ul.today-bottom :first-child{
+    background-image: url(images/眼_03.png);
+    float: left;
+    margin-left: 15px;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+   .today ul.today-bottom :nth-child(2){
+     background-image: url(images/心_06.png);
+     float: left;
+      padding-left: 26px;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+   }
+  .today ul.today-bottom :nth-child(3){
+       background-image: url(images/评论_05.png);
+       float: left;
+        padding-left: 25px;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+     }
+   .tabbar{
+   	height: 49px;
+   	background-color: #000;
+   }
+   .tabbar li{
+     width: 49px;
+     height: 49px;
+     float: left;
+     text-align: center;   
+     margin-right: 30px;  
+     margin-top: 3px;
+   }
+   .tabbar a {
+    text-decoration: none;
+    font-size: 14px;
+   }
+   .tabbar span{
+    color: #4d4d4d;
+   }
+   .tabbar li:first-child span{
+  color: red;
+   }
+   .tabbar img{
+    height: 25px;
+    width: 25px;
+   }
+   .tabbar span {
+    display: block;
+   }
+   .tabbar li:last-child{
+    margin-right: 5px;
+   }
+   .tabbar li:first-child{
+    margin-left: 5px;
+   }
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="navbar">
+       <div class="dingwei">北京<span class="iconfont icon-dingwei"></span></div>
+       <div class="logo"><img src="images/kk_03.png" alt=""></div>
+       <div class="search"><span class="iconfont icon-sousuo"></span> </div>
+  </div>
+	<div class="content">
+		<div class="banner">
+			<img src="images/banner_02.jpg" alt="">
+		</div>
+		<div class="newtask">
+			<h3>-最新任务- </h3>
+ <div class="message">
+    <p>河北省秦皇岛市海港区河北大街西段360号河北科技师范学院</p>
+    <div class="purlish"> 
+<img  class="face" src="images/脸.jpg" alt="">
+<b>jack chen</b>
+<img  class="sex" src="images/性别_06.jpg" alt="">
+<img class="money" src="images/余额_03.jpg" alt="">
+<span class="number">50</span>
+</div>
+<div class="time"><time>1分钟前</time><img class="position"src="images/postion_07.jpg" alt=""><span>河北大街西段</span></div>
+     </div>
+<div class="messages">
+    <p>我想知道北京这个星巴克现在...</p>
+    <div class="xingbake">
+      <img class="picture" src="images/星巴克_03.jpg" alt="">
+       </div>
+    <div class="people">
+      <img  class="face" src="images/脸2_03.jpg" alt="">
+      <b>an 然</b>
+      <img class="anran_sex" src="images/性别2_06.jpg" alt="">
+      <img class="anran_money" src="images/余额_03.jpg" alt="">
+      <span class="anran_number">100</span>
+    </div>
+     <div class="anran_time">
+       <time>3分钟前</time>   
+       <img class="anran_position" src="images/职位_07.jpg" alt="">
+          <span>河北科技师范学院</span>
+    </div>
+</div>
+
+		</div>
+		<div class="today">
+         <h3>-今日推荐-</h3>
+           <ul  class="pic">
+              <li><img src="images/today1_03.jpg" alt=""></li>
+              <li><img src="images/today2_03.jpg" alt=""></li>
+              <li> <img src="images/today3_03.jpg" alt=""></li>
+           </ul>
+           <h4>所罗门-R-古根海梅美术馆(The Solomon R.Guggenheim museum) </h4>
+           <span>古根海梅美术馆</span>
+           <ul class="today-bottom">
+            <li>6376</li>
+            <li>70</li>
+            <li>261</li>
+           </ul>
+      </div>
+	</div>
+	<div class="tabbar">
+   <ul>
+     <li>
+      <a href="https://www.baidu.com/">
+        <img   src="images/tab-icon_03.png" alt=""> 
+        <span>首页</span>
+      </a>
+     </li>
+     <li>
+      <a href="https://www.taobao.com/">
+        <img src="images/tab-icon-defualt_05.png" alt="">
+        <span>发现</span>
+     </a>
+   </li>
+     <li>
+      <a href="https://www.qq.com/">
+        <img src="images/tab_icon_02.png" alt="">
+        <span>发布</span>
+      </a>
+    </li>
+     <li>
+      <a href="https://www.lol.qq.com/">
+        <img src="images/tab-icon-defualt_07.png" alt="">
+       <span>消息</span>
+      </a>
+    </li>
+     <li>
+      <a href="https://www.pinduoduo.com/">
+         <img src="images/tab-icon-defualt_09.png" alt="">
+        <span>我的</span>
+      </a>
+    </li>
+   </ul> 
+  </div>
+</div>
+</body>
+</html>

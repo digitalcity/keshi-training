@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>趋势部落</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<style>
+*
+{
+	margin: 0;
+	padding:0;
+}
+body
+{
+	position: relative;
+}
+.home
+{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+.content
+{
+    position:absolute;
+    left:0;
+    top:0;                     
+    width:100vw;                                         
+    height: 100vh;
+    background-color:#ccc;
+    z-index:0; 
+}
+.content > div
+{
+width:100vw;
+height: 100vh;
+position: absolute;
+opacity:0;
+transition:opacity 1S;
+}
+.meili
+{
+	background-color:#fcb4b8;
+
+}
+.huimai
+{
+	background-color:#fcaf99;
+			
+}
+.guochao
+{
+	background-color:#eb4822;
+	
+}
+.dule
+{
+	background-color:#da5424;
+	
+}
+.niling
+{
+	background-color:#f45c5d;
+	
+}
+.tonghao
+{
+	background-color:#f78b8c;
+
+}
+.swiper-container 
+{
+   position:absolute;
+    width: 90vw;
+    height: 39.08vh;
+    left:6vw;
+    top:48vh;
+}  
+.content>div>img
+{
+	position: absolute;
+}
+    .diwen-up{
+		width: 60vw;
+		top: 0;
+		right: 0;
+	}
+	.diwen-mid{
+		width: 100vw;
+		bottom: 0.9vh;
+		left: 0;
+	}
+	.biaoti{
+		width: 60.8vw;
+		top: 5vw;
+		left:6.93vw;
+	}
+	.right{
+		width: 14.4vw;
+		top: 6.13vw;
+		left:81.86vw;
+	}
+	.jumin{
+		width: 50.4vw;
+		top: 40.53vw;
+		left:6.13vw;
+	}
+	.shu1{
+		width: 20.26vw;
+		top: 68.8vw;
+		left:7.2vw;
+	}
+	.shu2{
+		width: 13.86vw;
+		top: 68.8vw;
+		left:44.93vw;
+	}
+	.shu3{
+		width: 14.93vw;
+		top: 68.8vw;
+		left:75vw;
+	}
+	.buluo{
+		width: 19.06vw;
+		top: 79.06vw;
+		left:6.13vw;
+	}
+	.jueding{
+		width: 31.46vw;
+		bottom:8vw;
+		left:9.2vw;
+	}
+	.chakan{
+		width: 31.46vw;
+		bottom:8vw;
+		left:60vw;
+	}
+	.shu11{
+		width: 9.26vw;
+		top: 68.8vw;
+		left:7.2vw;
+	}
+	.shu21{
+		width: 25.86vw;
+		top: 68.8vw;
+		left:37.93vw;
+	}
+	.shu31{
+		width: 14.03vw;
+		top: 68.8vw;
+		left:75vw;
+	}
+	.shu12{
+		width: 25.16vw;
+		top: 68.8vw;
+		left:7.2vw;
+	}
+	.shu22{
+		width: 9.76vw;
+		top: 68.8vw;
+		left:48.93vw;
+	}
+	.shu32{
+		width: 13.93vw;
+		top: 68.8vw;
+		left:75vw;
+	}
+	.shu13{
+		width: 15.26vw;
+		top: 68.8vw;
+		left:7.2vw;
+	}
+	.shu23{
+		width: 9.86vw;
+		top: 68.8vw;
+		left:46.93vw;
+	}
+	.shu33{
+		width: 18.93vw;
+		top: 68.8vw;
+		left:75vw;
+	}
+	.shu14{
+		width: 21.26vw;
+		top: 68.8vw;
+		left:7.2vw;
+	}
+	.shu24{
+		width: 15.86vw;
+		top: 68.8vw;
+		left:41.93vw;
+	}
+	.shu34{
+		width: 14.73vw;
+		top: 68.8vw;
+		left:75vw;
+	}
+	.shu15{
+		width: 11.26vw;
+		top: 68.8vw;
+		left:7.2vw;
+	}
+	.shu25{
+		width: 18.16vw;
+		top: 68.8vw;
+		left:42.93vw;
+	}
+	.shu35{
+		width: 12.43vw;
+		top: 68.8vw;
+		left:75vw;
+	}
+.a1
+{
+	width:100vw;
+	display: block;
+}
+.title
+{
+	width: 22vw;
+	position:absolute;
+	animation: move 2.5s linear infinite;
+}
+.title-meili
+{
+	top: 26.4vw;
+	left: 60.4vw;
+}
+.title-huishi
+{
+	top:64.53vw;
+	left:11.6vw;
+}
+.title-guochao
+{
+	top:97.2vw;
+	left:52.4vw;
+}
+.title-dule
+{
+	top:156.4vw;
+	left:65.73vw;
+}
+.title-niling
+{
+	top:166.5vw;
+	left:3.8vw;
+}
+.title-tonghao
+{
+	top:198.8vw;
+	left:43.8vw;
+}
+.tip
+{
+	position:fixed;
+	bottom:5vh;
+	font-size:20px;
+	color:#fff;
+	font-weight:bold;
+	width:33vw;
+	text-align: center;
+	left:33.5vw;
+	animation:tipmove 3s infinite; 
+}
+.swiper-slide>img{
+	position: absolute;
+}
+   .zi
+   {
+	width: 78.29vw;
+	top:4.5vh;
+	left:0vw;
+   }
+   .tupian
+   {
+	position:absolute;
+	width:42.86vw;
+	left:23vw;
+	bottom:4vh;
+   }
+   .yingguangbang
+   {
+	position:absolute;
+	width:23.86vw;
+	left:24vw;
+	bottom:6vh;
+   }
+	.shu2,.shu3,.shu21,.shu31,.shu22,.shu32,.shu23,.shu33,.shu24,.shu34,.shu25,.shu35
+	{
+   opacity:0.5;
+	}
+	.swiper-pagination-bullet-active{
+		 background: #fff;
+	}
+	.join
+	{
+		width:30.9vw;
+		left:9vw;
+		bottom:5vh;
+	}
+	.result
+	{
+		position:absolute;
+		width:100vw;
+		height: 100vh;
+		top:0;
+		left:0;
+		z-index:0;
+	}
+	.result>div
+	{
+		position:absolute;
+		width:100vw;
+		height: 100vh;
+		left: 0;
+		top: 0;
+		z-index: 0;
+		opacity: 0;
+		transform:opacity 0.5s;
+	}
+	.result>div>.pic
+	{
+		position:absolute;
+		width:100vw;
+		height:100vh;
+		top:0;
+		left:0;
+	}
+	.fanhui
+	{
+		position:absolute;
+		width:30vw;
+		left:35vw;
+		bottom:5vh;
+		z-index:0;
+	}
+@keyframes move
+{
+	0%
+	{
+		transform:translateY(0px) scale(1);
+	}
+	25%
+	{
+		transform:translateY(-10px) scale(1.25);
+	}
+	50%
+	{
+		transform:translateY(-20px) scale(1.5);
+	}
+	75%
+	{
+		transform:translateY(-10px) scale(1.25);
+	}
+	100%
+	{
+		transform:translateY(0px) scale(1);
+	}
+}
+@keyframes tipmove
+{
+	0%
+	{
+		transform:translate(0px,0px);
+	}
+	25%
+	{
+		transform:translate(-10px,10px);
+	}
+	50%
+	{
+		transform:translate(0px,20px);
+	}
+	75%
+	{
+		transform:translate(10px,10px);
+	}
+	100%
+	{
+		transform:translate(0px,0px);
+	}
+}
+</style>
+</head>
+<body>
+<div class="home">
+	    <img class="a1" src="images/bg1.jpg" alt="">
+	    <img  class="title title-meili" data-num="0" src="images/title_03.png" alt="">
+	    <img  class="title title-huishi" data-num="1" src="images/title_07.png" alt="">
+        <img  class='title title-guochao' data-num="2" src="images/title_11.png" alt="">
+        <img  class='title title-niling' data-num="3" src="images/title_18.png" alt="">
+        <img  class='title title-dule' data-num="4" src="images/title_15.png" alt="">
+        <img  class='title title-tonghao' data-num="5" src="images/title_23.png" alt="">
+        <span class="tip">请上下滑动</span>
+    </div>
+    <div class="content">
+    <div class="meili">
+		<img class="diwen-up"src="images/buluo_one/底纹上.5a193037.png" alt="">
+		<img class="diwen-mid"src="images/buluo_one/底纹中.1c28fae2.png" alt="">
+		<img class="biaoti" src="images/buluo_one/顶部大标题.bcba0f48.png" alt="">
+		<img class="right" src="images/buluo_one/right.png" alt="">
+		<img class="jumin" src="images/buluo_one/居民资料.4d399362.png" alt="">
+		<img class="shu shu1" src="images/buluo_one/下载 (1).png" alt="">
+		<img class="shu shu2" src="images/buluo_one/下载 (2).png" alt="">
+		<img class="shu shu3" src="images/buluo_one/下载 (3).png" alt="">
+		<img class="buluo" src="images/buluo_one/bl.png" alt="">
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide">
+        <img class="zi ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" 
+        src="images/buluo_one/下载02.png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/buluo_one/安瓶.d31ff095.png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" 
+        src="images/buluo_one/下载3.png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" 
+        src="images/buluo_one/美白仪.8edc2c80.png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" 
+        src="images/buluo_one/护肤品t.a6eed0b5 (1).png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" 
+        src="images/buluo_one/护肤品.88f24e29.png" alt="">
+    </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+		<img class="jueding" date-num="0" src="images/buluo_one/btn (2).png" alt="">
+		<img class="chakan" src="images/buluo_one/btn (1).png" alt="">
+    </div>
+    <div class="huimai">
+        <img class="diwen-up"src="images/2/底纹上.5a1930371.png" alt="">
+		<img class="diwen-mid"src="images/2/底纹中.1c28fae21.png" alt="">
+		<img class="biaoti" src="images/2/顶部大标题.bcba0f481.png" alt="">
+		<img class="right" src="images/2/right1.png" alt="">
+		<img class="jumin" src="images/2/居民资料.4d3993621.png" alt="">
+		<img class="shu shu11" src="images/2/下载 (3)1.png" alt="">
+		<img class="shu shu21" src="images/2/下载 (1)1.png" alt="">
+		<img class="shu shu31" src="images/2/下载 (2)1.png" alt="">
+		<img class="buluo" src="images/2/bl1.png" alt="">
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" 
+        src="images/2/简易家具部落资料.0b03861e.png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" 
+        src="images/2/简易家具.4a85b105 (1).png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img class="zi ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/2/纸巾抽部落资料.08c6bc5e.png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" 
+        src="images/2/纸巾抽.ab4732ab.png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/2/厨房用具部落资料.203d07a0.png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" 
+        src="images/2/厨房用具.64a41e54.png" alt="">
+    </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+		<img class="jueding" date-num="1" src="images/2/btn (2)1.png" alt="">
+		<img class="chakan" src="images/2/btn (1)1.png" alt="">
+    </div>
+    <div class="guochao">
+        <img class="diwen-up"src="images/3/底纹上.5a1930372.png" alt="">
+		<img class="diwen-mid"src="images/3/底纹中.1c28fae22.png" alt="">
+		<img class="biaoti" src="images/3/顶部大标题.bcba0f482.png" alt="">
+		<img class="right" src="images/3/right2.png" alt="">
+		<img class="jumin" src="images/3/居民资料.4d3993622.png" alt="">
+		<img class="shu shu12" src="images/3/下载 (1)2.png" alt="">
+		<img class="shu shu22" src="images/3/下载 (2)2.png" alt="">
+		<img class="shu shu32" src="images/3/下载 (3)2.png" alt="">
+		<img class="buluo" src="images/3/bl2.png" alt="">
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/3/4000万text.3f8e7449.png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/3/国风服饰.59d2cb71.png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/3/2倍text.6ea85733.png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/3/老干妈卫衣.39f7b465.png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/3/70倍text.3b5c5c10.png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/3/老爹鞋.ba8ed22d.png" alt="">
+    </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+		<img class="jueding" date-num="2" src="images/3/下载 (6)2.png" alt="">
+		<img class="chakan" src="images/3/btn (1)2.png" alt="">
+    </div>
+    <div class="dule">
+        <img class="diwen-up"src="images/4/底纹上.5a1930373.png" alt="">
+		<img class="diwen-mid"src="images/4/底纹中.1c28fae23.png" alt="">
+		<img class="biaoti" src="images/4/顶部大标题.bcba0f483.png" alt="">
+		<img class="right" src="images/4/right3.png" alt="">
+		<img class="jumin" src="images/4/居民资料.4d3993623.png" alt="">
+		<img class="shu shu13" src="images/4/下载 (1)3.png" alt="">
+		<img class="shu shu23" src="images/4/下载 (2)3.png" alt="">
+		<img class="shu shu33" src="images/4/下载 (3)3.png" alt="">
+		<img class="buluo" src="images/4/bl3.png" alt="">
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/4/下载 (4).png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/4/登山杖.92a74af3.png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/4/下载 (5).png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/4/血压计.65182a7b.png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/4/潮牌服饰部落资料.c3fd850f (2).png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/4/潮牌服饰.737f3330.png" alt="">
+    </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+		<img class="jueding" date-num="3" src="images/4/btn (2)3.png" alt="">
+		<img class="chakan" src="images/4/btn (1)3.png" alt="">
+    </div>
+    <div class="niling">
+        <img class="diwen-up"src="images/5/底纹上.5a1930374.png" alt="">
+		<img class="diwen-mid"src="images/5/底纹中.1c28fae24.png" alt="">
+		<img class="biaoti" src="images/5/顶部大标题.bcba0f484.png" alt="">
+		<img class="right" src="images/5/right4.png" alt="">
+		<img class="jumin" src="images/5/居民资料.4d3993624.png" alt="">
+		<img class="shu shu14" src="images/5/下载(2)4.png" alt="">
+		<img class="shu shu24" src="images/5/下载(1)4.png" alt="">
+		<img class="shu shu34" src="images/5/下载(3)4.png" alt="">
+		<img class="buluo" src="images/5/bl4.png" alt="">
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/5/下载 (8).png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" 
+        src="images/5/小火锅.92910d4b.png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/5/猫粮狗粮部落资料.dccb4b8d.png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/5/猫粮狗粮.ba2e5d5a.png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/5/投影仪部落资料.f2a75d15.png" alt="">
+        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+        src="images/5/投影仪.6c887442.png" alt="">
+    </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+		<img class="jueding" date-num="4" src="images/5/btn (2)4.png" alt="">
+		<img class="chakan" src="images/5/btn (1)4.png" alt="">
+    </div>
+    <div class="tonghao">
+        <img class="diwen-up"src="images/6/底纹上.5a1930375.png" alt="">
+		<img class="diwen-mid"src="images/6/底纹中.1c28fae25.png" alt="">
+		<img class="biaoti" src="images/6/顶部大标题.bcba0f485.png" alt="">
+		<img class="right" src="images/6/right5.png" alt="">
+		<img class="jumin" src="images/6/居民资料.4d3993625.png" alt="">
+		<img class="shu shu15" src="images/6/下载 (1)5.png" alt="">
+		<img class="shu shu25" src="images/6/下载 (3)5.png" alt="">
+		<img class="shu shu35" src="images/6/下载 (2)5.png" alt="">
+		<img class="buluo" src="images/6/bl5.png" alt="">
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+	    <div class="swiper-slide">
+	        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+	        src="images/6/荧光棒部落资料.0183f0fa.png" alt="">
+	        <img class="yingguangbang ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+	        src="images/6/荧光棒.7d8474d6.png" alt="">
+	    </div>
+	    <div class="swiper-slide">
+	        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+	        src="images/6/下载 (2).png" alt="">
+	        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+	        src="images/6/盲盒玩具.510ad558.png" alt="">
+	    </div>
+	    <div class="swiper-slide">
+	        <img class="zi ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+	        src="images/6/洛丽塔服饰部落资料.35fe97e6.png" alt="">
+	        <img class="tupian ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+	        src="images/6/洛丽塔服饰.85c4fcb6.png" alt="">
+	    </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+		<img class="jueding"  date-num="5" src="images/6/btn (2)5.png" alt="">
+		<img class="chakan" src="images/6/btn (1)5.png" alt="">
+    </div>
+</div>
+   <div class="result">
+    <div date-num="0">
+        <img  class="pic" src="images/buluo_one/美丽部落-结果页.adbac586.png" alt="">
+        <img  date-num="0" class="fanhui" src="images/2/fan.png" alt="">
+    </div>
+    <div date-num="1">
+        <img  class="pic" src="images/2/惠买部落-结果页.6610cb49.png" alt="">
+        <img  date-num="1" class="fanhui" src="images/2/fan.png" alt="">
+    </div>
+    <div date-num="2">
+    	<img  class="pic" src="images/3/以国为潮-结果页.3deeddd1.png" alt="">
+    	<img  date-num="2" class="fanhui" src="images/2/fan.png" alt="">
+    </div>
+    <div date-num="3">
+        <img  class="pic" src="images/4/逆龄部落-结果页.6592f64c.png" alt="">
+        <img  date-num="3" class="fanhui" src="images/2/fan.png" alt="">
+    </div>
+    <div date-num="4">
+        <img  class="pic" src="images/5/独乐部落-结果页.d0fbd40f.png" alt="">
+        <img  date-num="4" class="fanhui" src="images/2/fan.png" alt="">
+    </div>
+    <div date-num="5">
+        <img  class="pic" src="images/6/同好部落-结果页.127894d6.png" alt="">
+        <img  date-num="5" class="fanhui" src="images/2/fan.png" alt="">
+    </div></div>
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.animate1.0.3.min.js"></script>
+<script>
+$(".title").click(function(){
+	$(".home").fadeOut(700).css("z-index",0)
+	$(".content").fadeIn(700).css("z-index",1)
+	$(".content > div").eq($(this).attr("data-num")).css("z-index",1).css("opacity",1)
+})
+var prevRandom
+$(".chakan").click(function(){
+	var nextRandom=Math.floor(Math.random()*6)
+	if(prevRandom==nextRandom){
+		nextRandom=nextRandom+1
+		if(nextRandom>5){
+			nextRandom=4
+		}
+	}
+	$(".content>div").eq(nextRandom).css("z-index",1).css("opacity",1).siblings().css("z-index",0).css("opacity",0)
+	prevRandom=nextRandom
+})
+var mySwiper = new Swiper('.swiper-container', 
+ {
+    loop: true, 
+    pagination: 
+    {
+      el: '.swiper-pagination',
+    },
+    on:
+    {
+      init: function()
+      {
+        swiperAnimateCache(this);  
+        swiperAnimate(this); 
+      }, 
+      slideChangeTransitionEnd: function()
+      { 
+        swiperAnimate(this);
+      },
+      slideChange:function(){
+      var ind = this.activeIndex
+      if(ind == 0){
+      	ind = 2
+      }else if(ind ==4){
+      	ind =0
+      }else{
+      	ind = ind - 1
+      }
+      console.log(ind)
+      $(this.$el).siblings(".shu").eq(ind).css("opacity",1).siblings(".shu").css("opacity",0.5)
+      }
+    }
+  })     
+    $(".jueding").click(function(){
+      	console.log(0)
+      	$(".result").fadeIn(700).css("z-index",1)
+      	$(".content").fadeOut(700).css("z-index",0)
+      	$(".content>div").eq($(this).attr("date-num")).css("opacity",0).css('z-index',0)
+      	$(".result>div").eq($(this).attr("date-num")).css("opacity",1).css('z-index',1)
+      })
+    $(".fanhui").click(function(){
+      	$(".home").fadeIn(700).css("z-index",1)
+      	$(".result").fadeOut(700).css("z-index",0)
+      	$(".result>div").eq($(this).attr("date-num")).css("opacity",0).css('z-index',0)
+      })
+</script>
+</body>
+</html>

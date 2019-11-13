@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1220357",
+      "name": "sousuo",
+      "font_class": "weibiaoti10",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "8674683",
+      "name": "dingwei",
+      "font_class": "dingwei",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    }
+  ]
+}

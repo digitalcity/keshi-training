@@ -1,0 +1,38 @@
+
+	.dingwei{float: left;font-size: 18px;margin-left: 25px;margin-right: 25px}
+	.search{float: right;margin-right: 25px;}
+	.logo{position: absolute;width: 73px;height: 28px;top: 6px;left: 155px}
+	
+	.banner{height: 204px;background-color: #f0f;}
+	img{width: 100%;}
+	.newtask{height: 135px;background-color: #f4f4f4;}
+	.newtask div{float: left;}
+	.pulisher li:first-child{margin-right: 3px;}
+	 h3{font-family: "微软雅黑";font-size: 18px;color:#e90000;text-align: center;font-weight: normal;}
+	.newtask div.masseges{float: left;width: 180px;height: 107px;background-color: #ffffff;margin-left: 5px;margin-right: 5px; }
+	.pulisher li{float:left;}
+	.newtask div:last-child{margin-left: 0;}
+	.face{float:left;width: 15px;height: 15px;margin-right: 10px;margin-left: 10px;}
+	.newtask p{font-family: "微软雅黑";font-size: 12px;margin-left: 5px;margin-top: 5px;color: #6c6c6c;}
+	.newtask b{color: #a8a8a8;}
+	.newtask strong{color: e10000;font-size: 13px;}
+	.newtask span.sex img {width: 10px;height: 10px;margin-left: 10px;}
+	.newtask .dollar{width: 20px;height: 20px;float: left;margin-left: 5px;margin-right: 5px;}
+   
+	
+	.masseges2{background-color:#ffffff;width: 180px;height: 107px;background-color: #ffffff;margin-left: 5px;margin-right: 5px;}
+	.pic2{width: 70px;height: 34px;margin-right: 100px}
+	.face2{width: 15px;vertical-align: middle;}
+	.sex2{width: 10px;margin-left: 15px;}
+	.dollar2{width: 20px;margin-left: 15px;}
+	
+	.home2{font-family: "微软雅黑";font-size: 10px;color: #cfcfcf;}
+	.today{height: 192px;background-color: #f4f4f4;}
+	.today ul.pic li{float:left;height: 105px;margin-right: 3px;}
+	.today ul.pic li:first-child{width: 108px;}
+	.today ul.pic li:nth-child(2){width: 165px;}
+	.today ul.pic li:nth-child(3){width: 94px;margin-right: 0;}
+	.today h4{font-family: verdana,"微软雅黑";font-size: 11px;color: #b3b3b3;margin-left: 15px;}
+	.today span{font-family: verdana,"微软雅黑";font-size: 10px;color: #c3c3c3;margin-left: 15px;}
+	
+	

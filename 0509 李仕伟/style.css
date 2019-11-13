@@ -1,0 +1,50 @@
+ul,ol,h4,span{margin-top: 0;margin-bottom: 0;padding-left: 0;list-style-type: none;}
+	.container{width: 375px;margin-right: auto;margin-left: auto;}
+	.navbar{position: relative;height: 44px;background-color: gray;background-image: url(../images/x_01.jpg);line-height: 44px;color: #fff;}
+	.content{background-color:gray;}
+	.dingwei{float: left;font-size: 18px;margin-left: 25px;}
+	.search{float: right;margin-right: 25px;}
+	.logo {position: absolute; width: 65px;height: 20px;top:6px;left: 155px;}
+    .banner{height: 204px;background-color: gray;}
+	img{width: 100%;}
+	
+	.newtask{height: 135px;background-color: gray;}
+	h3{font-family: "微软雅黑";font-size: 18px;color:#ea1515;text-align: center;font-weight: normal;margin-top: 0;margin-bottom: 0; }
+	.newtask div.masseges{float:left;width: 180px;height: 107px;background-color: white;margin-left: 5px;margin-right: 5px;}
+	.masseges li{float:left;}
+	.newtask div:last-child{margin-left: 0;}
+	.face{float:left;width: 20px;height: 20px;margin-right: 3px;}
+	.newtask p{font-family: "微软雅黑";font-size: 14px;margin-left: 5px;margin-top: 5px;color: #646464;}
+	.newtask span.sex img{width: 10px;height: 10px;}
+	.newtask.pulisher:last-child{float: left;}/*++++++++*/
+	.dollar{width: 20px;height: 20px;float:left;margin-right: 5px;margin-left: 10px}f
+	.money{margin-left: 0}
+	.newtask .time li{float: left;margin-left:10px;margin-top: 8px;}
+	.newtask .time li:first-child{font-family: "微软雅黑";font-size: 10px;}
+	.newtask .time li:last-child{font-family: "微软雅黑";font-size: 10px;}
+	.newtask .time img{width: 7px;}
+	
+	.today{height:192px;background-color: gray;}
+	.today ul.pic li {float:left;height: 105px;margin-right: 3px;}
+	.today ul.pic li:first-child{width: 108px;}
+	.today ul.pic li:nth-child(2){width: 165px;}
+	.today ul.pic li:nth-child(3){width:94px;}
+	.today ul.pic li:last-child{margin-right: 0;}
+    .today h4{font-family: verdana,"微软雅黑";font-size: 14px;color:#b3b3b3;margin-left: 10px}
+    .today span{font-family: verdana,"微软雅黑";font-size: 14px;color:#b3b3b3;margin-left: 10px}
+	.today ul.data {margin-left:15px}
+	.today ul.data li{float: left;margin-right: 20px;}
+	.today ul.data li:first-child{ padding-left:40px;background-image: url(../images/icon_03.png);background-repeat: no-repeat;-webkit-background-size:contain;
+	background-size:contain;}
+	.today ul.data li:nth-child(2){padding-left:25px;background-image: url(../images/icon_06.png);background-repeat: no-repeat;-webkit-background-size:contain;
+	background-size:contain;}
+	.today ul.data li:nth-child(3){padding-left:25px;background-image: url(../images/icon_04.png);background-repeat: no-repeat;-webkit-background-size:contain;
+	background-size:contain;}
+	
+
+	.tabbar{height: 49px;background-color: gray;clear:left;}
+	.tabbar li{float:left;width: 49px;height: 49px;text-align: center;margin-right: 30px;}
+	.tabbar li:first-child{margin-left: 5px;}
+    .tabbar li:last-child{margin-right: 5px;}
+    .tabbar img{width: 23px;}
+    .tabbar span{display: block;}

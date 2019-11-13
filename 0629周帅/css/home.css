@@ -1,0 +1,38 @@
+.dingwei {float: left;font-size: 18px;margin-left: 25px;text-decoration: none;color: #fff;}
+.search {float: right;margin-right: 25px;text-decoration: none;color: #fff;}
+.logo {position: absolute;width: 65px;height: 20px;top: 10px;left: 155px;}
+.banner {height: 204px;}
+img {width: 100%;}/*标签选择器*/
+.newtest {height: 135px;font-family: "微软雅黑";font-size: 12px;}
+
+
+h3 {font-size: 18px;color: #ea0f0f;text-align: center;/*文本居中对齐*/font-weight: normal;/*把加粗变成正常显示*/margin-top: 5px;margin-bottom: 5px;}
+.newtest div.masseges {float: left;width: 180px;height: 107px;background-color: #fff;margin-left: 4px;margin-right: 4px;}
+.newtest div.two {float: left;width: 180px;height: 107px;background-color: #fff;margin-left: 0;margin-right: 4px;}
+.masseges li {float: left;}
+.two li {float: left;}
+.newtest p {margin-top: 8px;margin-bottom: 8px;margin-left: 8px;margin-right: 8px;color: #6a6a6a;}
+.face {float: left;width: 20px;height: 20px;margin-left: 13px;margin-right: 13px;}
+.name {font-family: verdana;;font-size: 8px;color: #646464;font-weight: normal;}
+.newtest span.sex img {width: 8px;}
+.newtest .pulisher li:last-child{float: right;margin-right: 10px;}
+.newtest .dollar {float: left;width: 20px;height: 20px;margin-right: 6px;}
+.newtest strong {font-family: Calibri;color: #e60002;}
+.time {clear: left;}
+.newtest .time {padding-top: 5px;}
+.newtest .time time {font-family: "微软雅黑";margin-left: 13px;font-size: 8px;color: #c2c2c2}
+.newtest .time img.weizhi {width: 8px;}
+.newtest .time b {font-family: "微软雅黑";font-size: 8px;color: #c2c2c2;font-weight: normal;}
+.newtest .time li:last-child {float: right;margin-right: 6px;}
+
+.newtest .two img.xingbake {width: 71px;margin-left: 8px;}
+
+.today {height: 192px;}
+.today ul.pic {height: 105px;}
+.today ul.pic li {float: left;height: 105px;margin-right: 3px}
+.today ul.pic li:first-child {width: 108px;}
+.today ul.pic li:nth-child(2) {width: 165px;}
+.today ul.pic li:nth-child(3) {width: 94px;}
+.today ul.pic li:last-child {margin-right: 0;}
+.today h4 {font-family: verdana,"幼圆";font-size: 10px;color: #7a7a7a;font-weight: normal;margin-left: 15px;margin-top: 4px;}
+.today span {font-family: verdana,"幼圆";font-size: 9px;color: #b6b6b6;font-weight: normal;margin-left: 15px;}

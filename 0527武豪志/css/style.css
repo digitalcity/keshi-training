@@ -1,0 +1,46 @@
+
+.dingwei{float: left;font-size: 18px;margin-left: 25px;}
+.search{float: right;margin-right: 25px;}
+.logo{position: absolute;width: 220px;height: 80px;top: 0px;left: 80px;}
+
+
+
+
+.banner{height: 203px;background-color: #f0f}
+img{width: 100%;}
+
+.newtask{height: 135px;ont-family: "微软雅黑",verdana;}
+
+h3{font-family:"幼圆";font-size:18px;color:#ea0606;text-align:center;font-weight:normal;}
+.newtask div.massages{float:left;width: 180px;height: 107px;background-color: white;margin-left:5px;margin-right:5px;}
+
+.face{float:left;width: 25px;vertical-align: middle;}
+.sex{width: 15px;height: 16px;vertical-align: middle;}
+.money{width: 25px;margin-left: 20px;vertical-align: middle;}
+.publisher span{color: red;}
+.position{width: 15px;margin-left: 50px;}
+.time{font-size: 12px;color: #999;}
+
+
+.newtask p{font-family: "微软雅黑";font-weight:normal;font-size:2px;color:#33333;margin-left: 5px;margin-top: 5px;height: 48px;}
+.newtask div:last-child{margin:0;}
+.today{height: 196px;}
+.today ul.picture{height: 105px;}
+.today ul.picture li{float:left;margin-left:2px;}
+.today ul.picture li:first-child{width: 108px;}
+.today ul.picture li:nth-child(2){width: 165px;}
+.today ul.picture li:nth-child(3){width: 94px;}
+.today ul.picture li:last-child{margin-right:0px;}
+.today h4{font-family: "微软雅黑",verdana;font-weight:normal;font-size:2px;color:#c5c5c5;margin-left: 15px;}
+.today span{font-family: "微软雅黑",verdana;font-weight:normal;font-size:1px;color:#cdcdcd;margin-left: 15px;}
+.data{margin-left: 15px;}
+.data li{float:left;margin-right:20px;margin-top: 5px;}
+.data li:first-child{background-image:url(../images/photo_bottom_03.gif);background-repeat: no-repeat;
+padding-left: 38px;background-size: contain;
+font-family: "微软雅黑",verdana;font-weight:normal;font-size:2px;color:#969696;}
+.data li:nth-child(2){background-image:url(../images/photo_bottom_08.gif);background-repeat: no-repeat;
+padding-left: 30px;background-size: contain;
+font-family: "微软雅黑",verdana;font-weight:normal;font-size:2px;color:#969696;}
+.data li:nth-child(3){background-image:url(../images/photo_bottom_05.gif);background-repeat: no-repeat;
+padding-left: 35px;background-size: contain;
+font-family: "微软雅黑",verdana;font-weight:normal;font-size:2px;color:#969696;}

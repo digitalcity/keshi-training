@@ -1,0 +1,34 @@
+    .dingwei {margin-left: 11px;float: left;font-size: 18px;}
+	.search {float: right;margin-right: 20px;width: 26px;height: 30px;}
+	.search .iconfont {font-size: 28px;}
+	.logo {position: absolute;width: 71px;height: 27px;top: 6px;left: 155px;}
+	.content{height: 554px;background-color: #f4f4f4;}
+	.banner{height: 204px;}
+	
+	.newtask div.masseges{float: left;width: 180px;height: 107px;background-color: #fff;margin-left: 5px;margin-right: 5px;}
+	.masseges li{float: left;}
+	.newtask div:last-child{margin-left: 0;}
+	.face{float:left;width: 25px;height: 20px;margin-right: 5px;margin-left: 5px;}
+	.newtask p{font-family:"微软雅黑";font-size: 14px;margin-left: 5px;margin-top: 5px;color: #646464; }
+	.newtask b {font-family:"微软雅黑";font-size: 14px;margin-left: 5px;margin-top: 5px;color: #646464;margin-bottom: 0;}
+	.today b {font-family:"微软雅黑";font-size: 10px;color: #646464;}
+	.newtask span.sex img{width: 10px;height: 10px;margin-right: 40px;}
+	.dollar {width: 20px;height: 20px;float: left;}
+	.newtask strong {color: #ea0606;}
+	.time li {float: left;margin-left: 5px;margin-top: 15px;font-family:"微软雅黑";color :#a3a3a3;font-size: 12px;}
+	.address {width: 7px;height: 9px;margin-left: 45px;}
+	.xing {width: 70px;height: 33px;margin-left: 5px;margin-right: 100px;}
+	.today ul.pic{height: 105px;}
+	.today ul.pic li {float:left;height: 105px;margin-right:3px;}
+    .today ul.pic li:first-child{width:108px;}
+    .today ul.pic li:nth-child(2){width: 165px;}
+    .today ul.pic li:nth-child(3){width: 94px;}
+    .today ul.pic li:last-child{margin-right:0;}
+    .today h4{font-family: "微软雅黑";font-size:14px;color :#898989;margin-left: 15px;}
+    .today span{font-family: "微软雅黑";font-size:12px;color :#c3c3c3;margin-left: 15px;}
+    .today-bottom {margin-left: 15px;}
+    .today-bottom li {float: left;margin-right: 20px;background-repeat: no-repeat;background-size: contain;margin-top:15px;}
+    .today-bottom li:first-child {padding-left:30px;background-image: url("../images/xx_011.jpg");}
+    .today-bottom li:nth-child(2){padding-left:40px;background-image: url("../images/xx_03.jpg");}
+    .today-bottom li:nth-child(3){padding-left:30px;background-image: url("../images/xx_08.jpg");}
+	.tabbar li:first-child span {color:#a31515;}

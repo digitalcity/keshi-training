@@ -1,0 +1,41 @@
+	
+	.content{height: 554px;background-color:#f4f4f4;}
+	
+	.dingwei {float: left;font-size: 18px;margin-left: 25px;}
+	.search{float: right;margin-right: 25px;}
+	.logo{position: absolute;width: 65px;height: 20px;margin-left: 155px;margin-top: 6px;}
+	.banner{height: 204px;background-color:#0ff;}
+	img{width: 100%;}
+	.newtask{height: 135px;background-color:#f4f4f4;}
+
+	h3{font-size:18px;color :#ea0606;text-align: center;font-weight: normal;   margin-top: 0px;margin-bottom: 0px;}
+	.newtask div.masseges{float: left;width: 180px;height: 107px;background-color: #fff;margin-left: 5px;margin-right: 5px;}
+	
+	.newtask div:last-child{margin-left: 0;}
+	.face{width: 20px;height: 20px;margin-right: 10px;margin-left: 10px;margin-top: 8px;}
+	.newtask p{font-size: 14px;margin-left: 5px;margin-top: 3px;color: #646464; margin-bottom: 0;}
+	.newtask .sex{width: 10px;height: 10px;}
+	.newtask .dollar {width: 10px;height: 10px;}
+	.newtask .zuobiao{width: 10px;height: 10px;margin-left: 26px;}
+	.newtask strong{font-size: 10px;margin-top: 25px;}
+	.newtask b{margin-top: 10px;}
+	.time {margin-left: 8px;margin-top: 0px;color :#a3a3a3;font-size: 9px;}
+	
+    .tu {width: 70px;height: 34px;margin-left: 5px;}
+	.today ul.pic{height: 105px;}
+	.today ul.pic li {float:left;height: 105px;margin-right:3px;}
+    .today ul.pic li:first-child{width:108px;}
+    .today ul.pic li:nth-child(2){width: 165px;}
+    .today ul.pic li:nth-child(3){width: 94px;}
+    .today ul.pic li:last-child{margin-right:0;}
+    .today h4{font-size:14px;color :#898989;margin-left: 15px;}
+    .today span{font-size:12px;color :#c3c3c3;margin-left: 15px;}
+    .today-bottom {margin-left: 15px;}
+    .today-bottom li {float: left;margin-right: 20px;}
+    .today-bottom li:first-child {padding-left:50px;background-image: url(../images/eye_03.png);background-repeat: no-repeat;background-size:contain;}
+    .today-bottom li:nth-child(2){padding-left:30px;background-image: url(../images/heart_06.png);background-repeat: no-repeat;background-size: contain;}
+    .today-bottom li:nth-child(3){padding-left:30px;background-image: url(../images/word_03.png);background-repeat: no-repeat;background-size: contain;}
+	.tabbar{height: 49px;background-color:black;}
+	.tabbar li{float: left;width: 49px;height: 49px;margin-right: 30px;text-align:center;}
+   
+

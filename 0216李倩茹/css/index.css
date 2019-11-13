@@ -1,0 +1,227 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	font-family: " 方正舒体";
+}
+.warp{
+	width: 100%;
+	height: 5741px;
+	/*background-color: blue;*/
+}
+.warp .header{
+	width: 100%;
+	height: 854px;
+	/*background-color: white;*/
+	/*插入图片*/
+	background-image: url('../images/bg-box.png');
+	/*图片无重复*/
+	background-repeat: no-repeat;
+	/*图片靠底部*/
+	background-position:left bottom;
+}
+h1,h3{
+	/*width: 922px;*/
+	width: 887px;
+	height: 63px; 	
+	margin: 0 auto;
+	padding-top: 58px;
+	margin-bottom: 10px;
+	padding-left: 146;
+	/*background-color: yellow;*/
+}
+h3{
+	padding-top: 30px;
+	margin-bottom: 17px;
+}
+h1 a,h3 a{
+	width: 265px;
+	height: 63px;
+	display: block;
+	background-image: url('../images/logo.png');
+}
+h3 a{
+	background-position: 0 -78px;
+}
+.warp .header .header-bottom{
+	width: 1133px;
+	height: 607px;
+	margin: 0 auto;
+	/*background-color: orange;*/
+}
+.header-bottom .text{
+	width: 284px;
+	height: 341px;
+	margin-top: 133px;
+	margin-left: 208px;
+	/*background-color: yellow;*/
+	float: left;
+}
+.link a{
+	text-decoration: none;
+	font-style: 12px;
+	color: #000007;
+	background-image: url('../images/separator.png');
+	background-repeat: no-repeat;
+	background-position: 0 -376px;
+	padding-left: 36px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	line-height: 24px;
+	transition:all 0.2s;
+}
+.link a:hover{
+	color: red;
+	background-position: 0 -476px;
+}
+.tron{
+	width: 27px;
+	height: 46px;
+	display: block;
+	float: left;
+	margin-top: 24px;
+	background-image: url('../images/arrow.png');
+	
+}
+
+.next{
+	width: 27px;
+	height: 46px;
+	display: block;
+	/*background-image: url('../images/arrow.png');*/
+	float: left;
+	margin-top: 24px;
+	margin-left: 40px;
+	background-image: url('../images/arrow.png');
+	background-position: -31px 0;
+}
+.tron:hover{
+background-position: -63px 0;	
+}
+.next:hover{
+background-position: -95px 0;	
+}
+.header-bottom .pic{
+	width: 441px;
+	height: 605px;
+	float: left;
+}
+.section{
+	width: 100%;
+}
+.section .black{
+	/*width: 922px;*/
+	width: 100%;
+	height: 860px;
+	margin: 0 auto;
+	background-color: black;
+	/*插入图片*/
+	background-image: url('../images/bg-box2.png');
+	/*图片无重复*/
+	background-repeat: no-repeat;
+	/*图片靠底部*/
+	background-position:left bottom;
+}
+.black .content{
+	width: 1033px;
+	height: 736px;
+	margin: 0 auto;
+	
+}
+.pic1{
+	width: 500px;
+	height: 627px;
+	/*background-color: blue;*/
+	float: left;
+}
+.text1{
+	width: 429px;
+	height: 627px;
+	/*background-color: lightblue;*/
+	float: left;
+	text-align: right;
+}
+h4{
+	color: #ec008c;
+	font-size: 32px;
+	line-height: 40px;
+}
+.text1 p{
+	color: #ffffe6;
+	font-size: 16px;
+	line-height: 28px;
+	margin-top: 16px;
+
+}
+.black .watch{
+	margin-right: 38px;
+}
+.black .link a{
+	color:#fff;
+	background-position: 0 -678px;
+}
+.black .link a:hover{
+	background-position: 0 -777px;
+	color: #ec008c;
+}
+.black .tron,.black .next{
+	float: right;
+}
+
+.section .pink{
+	/*width: 922px;*/
+	width: 100%;
+	height: 939px;
+	/*background-color: pink;*/
+	margin: 0 auto;
+		background-image: url('../images/bg-box3.png');
+	/*图片无重复*/
+	background-repeat: no-repeat;
+	/*图片靠底部*/
+	background-position:left bottom;
+}
+.section .mix{
+	/*width: 922px;*/
+	width: 100%;
+	height: 1133px;
+	/*background-color: blueviolet;*/
+	margin: 0 auto;
+	/*插入图片*/
+background-image: url('../images/bg-box4.png');
+	/*图片无重复*/
+	background-repeat: no-repeat;
+	/*图片靠底部*/
+	background-position: left bottom;
+}
+.section .gray{
+	/*width: 922px;*/
+	width: 100%;
+	height: 1322px;
+	/*background-color: red;*/
+	margin: 0 auto;
+		/*插入图片*/
+	background-image: url('../images/bg-box5.png');
+	/*图片无重复*/
+	background-repeat: no-repeat;
+	/*图片靠底部*/
+	background-position: left bottom;
+}
+.section .white{
+	/*width: 922px;*/
+	width: 100%;
+	height: 677px;
+	background-color: white;
+	margin: 0 auto;
+	background-image: url('../images/bg-box6.png');
+	/*图片无重复*/
+	background-repeat: no-repeat;
+	/*图片靠底部*/
+	background-position: left bottom;
+}
+.footer{
+	width: 100%;
+	height: 156px;
+	/*background-color: black;*/
+}

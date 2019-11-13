@@ -1,0 +1,53 @@
+.containter {width:375px;margin-left: auto;margin-right: auto;}
+.navbar {height:44px;background-color:red;}
+.dingwei{float:left;font-size: 18px;margin-left: 25px;}
+.search{float:right;margin-right: 25px;}
+.logo{position: absolute;width: 80px;height: 20px;top: 9px;left: 320px;}
+.banner{ height: 204px;background-color:white; }
+img{width:100%;}/*标签选择器*/
+.newtask{height: 135px;background-color:yellow; }
+h3{font-family: "微软雅黑";font-size: 15px;text-align: center;/*字体，字号，居中*/
+color: #ec4141;font-weight: normal;margin-top: 0;margin-bottom:0;}
+.newtask div{float:left;width:180px;margin-left: 5px;background-color: white; }
+.newtask div:last-child{margin-right: 5px;margin-left: 5px;} 
+.newtask div.time{font-size: 7px;border-right: 15px;}
+.newtask div.word {position:auto;}
+.newtask div.word li {font-family: "微软雅黑";font-size: 12px;text-align: center;height: 35px;}/*字体，字号，居中*/
+/*.p{font-family: "微软雅黑";font-size: 12px;text-align: center;height: 35px;}*/
+.head{width: 25px;}
+.sex{width: 8px;}
+.dollar{width: 25px;margin-left: 25px;}
+.position{width: 8px;}
+.word{font-family: "微软雅黑";}       
+.face{float:left;width: 20px;height: 20px;margin-right: 3px;}
+.face li{float:left;height: 105px;margin-right: 3px;}
+.newtask p{font-family: "微软雅黑";font-size: 15px;}
+.today ul.pic{height: 192px;background-color:green;display:inline;}
+.today ul.pic li{float:left;}      
+.today ul.pic li:first-child{width:100px;}
+.today ul.pic li:nth-child(2){width: 165px;}
+.today ul.pic li:nth-child(3){width: 100px;}
+.today ul.pic li:last-child{margin-right: 0px;}
+ul,ol,h4,h5,p{margin-top: 0;margin-bottom: 0;padding-left: 0;list-style-type:none ;font-weight: normal}/*去点，字体*/
+.today h4{font-family: verdana,"微软雅黑";font-size: 6px;margin-left: 10px;}
+.today h5{font-family: "微软雅黑";font-size: 1px;margin-left: 10px;}
+.today-battom{margin-left: 15px;height: 22px;}
+.today-battom li{float:left;margin-right: 20px;background-repeat: no-repeat;-webkit-background-size: contain;
+background-size: contain;}
+.today-battom li:first-child{padding-left:40px;background-image: url(../images/xx_20.gif);
+width:26px;}
+.today-battom li:nth-child(2) {padding-left:25px;background-image: url(../images/xx_23.gif);width:26px;}
+.today-battom li:nth-child(3) {padding-left:25px;background-image: url(../images/xx_17.gif);width:26px;}
+.tabbar{height:49px;background-color:black;}
+.tabbar li{float:left;width:49px;height: 49px;text-align: center;margin-right: 26px;}
+.tabbar li:first-child{margin-left: 5xp;}
+.tabbar li:last-child{margin-right: 0;}
+.tabbar img{display:block;width: 23px;}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1572503241057'); /* IE9 */
+  src: url('iconfont.eot?t=1572503241057#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPQAAsAAAAAB6AAAAOEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqCeIJ4ATYCJAMMCwgABCAFhG0HRxvPBlGUzUmJ7AtsG/ZkGUECCpAQuWAgoA8DHM5GKoiCKgAcIIJs2Gbv9lsHHKhSFcGXLlEEBQ6FxeJRIDTKYDQO1Y34H+3q322OKpUTNedqmJnNrrO58wdQ2ZVYEhVZ/nqzgGv8f9d2QKSbJzKPapLEk0ZKknpXgSYi1bz/bYhWkoHid+Fw2gUP7yzL5Z5PDwOMAwro/EdWIAF5w9iVF7GZQNeKXD6n7b0jECgZvQLxQA0ZAlNKWZMZ2kKzZGKKV7TLc3kEvPjfj3/FEUjRqIyBV/dtGjR+hX3fRcvny+UisMbTg02jYhdI4rbUeAOFwV1IVxH61ic2pVDG8ni9+ExV3FzpH68QTUZ6H2xCQTkplk0h+NplQJHzN9NE4UdgcSSt78BMkpigudBOS1aMYWzh6BEAXHoUoWbMOPEHc9xNZ/c4ivWEjBfEAcg0L9+IZg5lZcZnpIcwoxdUhGD5SB87xGbn+9LJQ4MblNV720LChIXxxBEn1952HFBS+dUYPV9+a9OdFbcbjE2/8+6tycEb1mQszKXcqqGUS4K6P3l+mUIo4Q1FOpdagAsOqZviBz9fToVFtIubWIHz4oma6Lir3I9iXoPT4CHgPQjf0BJL6gfbI5reMq3NKW66kEj8TeLtlu23nBjqtk6bTiumVR2iHxTtpC0b4IN505E303xZ3mh6R+sk7xDMZpvHQ1rKlzdaZpovbzR/+Z53MD5uaOjuXSyLi4+vrX2X/LjlUeujlscgAcxXpE99ApjfRSpq/Gm/sZehcRdR+78dkuDj8+B9n9NerX1LpuAXFSQw92ZwjqGqKTNtpm6qLhN2BUjnIj8mG6be9xcvtvYT2ikWg6JlGaq2VWRid6GhZx+a2g6ga0fH9J4ZBonsYNsaAGHsIhRD71CNPUYm9h00LPkHTeNA0HUdMQv2rAcNbmFE5kTDyhymqtOhWxoeHGQKxJiyySzJ8fFjhHmoBxflF2YjHcRB2BhDPNNGMec61pnTjtvBdsRmc2IXc1qIyvPNnLuqCwr0sjflq047BDvBEDKO0GCKORilcnLQ3epccO7zAsIwxUbGasoq1GMIxoPWjxXJV9gC2SF0tCq7lms8phmKcZwO0zFOdlg70BM2M+iEucrbWRAqLp+5h9+lWgGqpLcV5s8vtj/fGugyBtcoUSN172WHockW6sojNSd/htC8WSo7ZmMFAA==') format('woff2'),
+  url('iconfont.woff?t=1572503241057') format('woff'),
+  url('iconfont.ttf?t=1572503241057') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1572503241057#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fangdajing:before {
+  content: "\e60d";
+}
+
+.icon-dingwei-xianxing:before {
+  content: "\e62c";
+}
+

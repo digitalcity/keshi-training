@@ -1,0 +1,14 @@
+     * {margin-top: 0;padding-left: 0;margin-bottom: 0;list-style-type: none;}
+     h3{font-family: "微软雅黑";font-size:18px;color :#ea0606;text-align: center;font-weight: normal;   margin-top: 0px;margin-bottom: 0px;}
+     .container{width: 375px;margin-left: auto;margin-right: auto;background-color: #f4f4f4;}
+     .newtask{height: 135px;}  
+     .navbar{height: 44px;position: relative;color:white;background-image: url(../images/nabar.png);line-height: 44px;}
+     img{width: 100%;}
+    .tabbar {height: 49px;background-color: #000;}
+	.tabbar li{float: left;width: 49px;height: 49px;margin-right: 25px;text-align:center;}
+	.tabbar li:first-child{margin-left: 5px;}
+    .tabbar li:last-child{margin-right: 5px;}
+    .tabbar span {display: block;color:#474747;font-size: 14px; }
+    .tabbar a {text-decoration: none;}
+    .tabbar img {width: 23px;height: 23px;margin-top: 5px;}
+

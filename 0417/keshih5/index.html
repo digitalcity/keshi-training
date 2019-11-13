@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>趋势部落</title>
+     <link rel="stylesheet" href="css/swiper.min.css">
+     <link rel="stylesheet" href="css/animate.min.css">
+	<style >
+     *{
+     margin: 0;
+     padding: 0;
+     }
+     boby{
+      position: relative;;
+     }
+     .home-bg{
+     	width: 100vw;
+     }
+     .title{
+     	width: 22vw;
+     	position: absolute;
+     	animation: move 2.5s linear infinite;
+     }
+     .title-meili{
+     	left: 61vw;
+     	top: 27.33vw;
+     }
+     .title-huimai{
+     	right: 69vw;
+          top:70vw;
+     }
+     .title-guochao{
+     	left: 59.6vw;
+     	top: 110vw;
+     }
+     
+     
+     .title-dule{
+     	left:66vw;
+     	top:170vw;
+     }
+     .title-niling{
+     	right:71.4vw; 
+     	top:166vw;
+	 }
+     .title-tonghao{
+     	left: 44.2vw;
+     	top:220vw;
+     }
+     @keyframes move{
+     	0%{
+     		transform :translateY(0px)  ;
+     	}
+     	50%{
+     		transform :translateY(-10px)  ;
+     	}
+     	100%{
+     		transform :translateY(0px);
+     	}
+     }
+     @keyframes tipMove{
+    
+          0%{
+               transform :translateY(0px);
+          }
+          50%{
+               transform :translateY(-5px);
+          }
+          100%{
+               transform :translateY(0px);
+          }
+     }
+    /*@keyframes move{
+          0%{
+               transform :translate(0px,0px);
+          }
+          25%{
+               transform :translate(50px,0px);
+          }
+          50%{
+               transform :translate(50px,80px);
+          }
+          75%{
+               transform :translate(0px,80px);
+          }
+          100%{
+               transform :translate(0px,0px);
+          }
+     }*/
+     .tip{
+          position: fixed;
+          bottom: 5vh;
+          font-size: 25px;
+          color: #fff;
+          font-weight: red;
+          width: 33vw;
+          text-align: center;
+          left: 33.5vw;
+          font-family:"楷体"; 
+          animation: tipMove 4s linear infinite;
+     }
+     .home{
+          position: absolute;
+          left: 0;
+          top:0;
+          z-index: 1;
+     }
+     .content{
+          position: absolute;
+          left: 0;
+          top:0;
+          width: 100vw;
+          height: 100vh;
+          background-color: #ccc;
+          z-index: 0;
+     }
+     .content > div{
+          width: 100vw;
+          height: 100vh;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: url(images/bg.png);
+          background-position: 20px 20px;
+          opacity: 0;
+          transition: opacity 1s;
+     }
+     .meili{
+          background-color:#fcb4b8;            
+     }
+     .huimai{
+         background-color:#fbaf99;         
+     }
+     .guochao{
+          background-color:#eb4822;         
+     }
+     .niling{
+          background-color: #da5424;           
+     }
+     .dule{
+          background-color: #f45c5d;
+     }
+     .tonghao{
+          background-color: #f66d1f; 
+     }
+     .content>div>img{
+          position: absolute;
+     }
+     .diwen-up{
+          width: 60vw;
+          top: 0;
+          right: 0;
+     }
+     .diwen-mid{
+          width: 100vw;
+          bottom: 1.5vh;
+          left: 0;
+     }
+     .dabiaoti{
+          width: 60vw;
+          top:5vh;
+          left: 5.6vw; 
+
+     }
+     .jumin{
+          width: 49vw;
+          top: 24.8vh;
+          left: 6vw;
+     }
+     .date{
+          width: 12vw;
+          top: 4vh;
+          right: 6vw;
+     }
+     .two{
+         width: 18.93vw;
+         top: 71.26vw;
+         left: 6.93vw; 
+     }
+     .seven{
+          width: 12.66vw;
+          top: 71.26vw;
+          left: 46.4vw;          
+     }
+     .four{
+          width: 14vw;
+          top: 71.26vw;
+          right: 5.06vw;
+     }
+     .b-one{
+          width: 17.86vw;
+          top: 87.26vw;
+          left: 6vw;
+     }
+     .btn-one{
+          width: 30.93vw;
+          bottom: 7.53vw;
+          right: 6vw;
+     }
+     .btn-two{
+          width: 30.93vw;         
+          bottom: 7.53vw;
+          right: 60vw;
+     }
+    .huimai > .two{
+          width: 7.73vw;
+          top: 71.26vw;
+          left: 10.93vw;
+     }
+     .huimai > .seven{
+          width: 24.13vw;
+          top: 71.26vw;
+          left: 38.4vw;
+     }
+     .huimai > .four{
+          width: 12.8vw;
+          top: 71.26vw;
+     }
+     .huimai > .diwen-mid{
+          bottom: 9vh; 
+     }
+     .guochao > .two{
+          width: 24vw; 
+          top: 71.26vw;
+          left: 5.93vw;
+     }
+     .guochao > .seven{
+          width: 8.66vw; 
+          top: 71.26vw;
+          left: 50.4vw;
+     }
+     .guochao > .four{
+          width: 12.53vw;
+          top: 71.26vw;     
+     }
+     .niling > .two{
+          width: 14.13vw; 
+     }
+     .niling > .seven{
+          width: 9.06vw; 
+     }
+     .niling > .four{
+          width: 19.2vw;     
+     }
+     .niling > .diwen-mid{
+          bottom: 10.5vh;
+     }
+     .dule > .two{
+          width: 19.2vw; 
+     }
+     .dule > .seven{
+          width: 14.13vw; 
+     }
+     .dule > .four{
+          width: 12.93vw;     
+     }
+     .dule > .diwen-mid{
+          bottom: 10.5vh;
+     }
+     .tonghao > .two{
+          width: 9.06vw; 
+     }
+     .tonghao > .seven{
+          width: 14vw; 
+     }
+     .tonghao > .four{
+          width: 9.06vw;     
+     }
+     .tonghao > .diwen-mid{
+          bottom: 3.5vh;
+     }
+     .swiper-container{
+          position: absolute;
+          width: 100vw;
+          height: 35.8vh;
+          left: 0;
+          top: 51.72vh;
+     }
+     .swiper-slide img{
+          position: absolute;
+     }
+     .info{
+          width: 87.26vw;
+          top: 0.5vh;
+          left: 6.4vw;
+     }
+     .goods{
+          width: 41.86vw;
+          top: 10.5vh;
+          left: 26.1vw;
+     }
+     .tonghao .one > .goods{
+          left: 34.1vw;
+          width: 27.86vw;
+          top: 6.5vh;
+     }
+     .niling .t > .goods{
+          top: 15.5vh;
+     }
+     .seven,.four{
+        opacity: 0.5;
+     }
+     .swiper-pagination-bullet-active{
+      background: #fff;
+     }
+     .result{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 0;
+     }
+     .result > div{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0; 
+        z-index: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+     }
+     .result > div > .pic{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+     }
+    .back{
+        position: absolute;
+        width: 30vw;
+        left: 35vw;
+        bottom: 5vh;
+    }
+	</style>
+}
+</head>
+<body>
+	<div class="home">
+          <img class="home-bg" src="images/bg1.jpg" alt="">
+          <img class ="title title-meili" date-num='0' src="images/title_03.png" alt="">     
+          <img class="title title-huimai" date-num='1' src="images/title_07.png"alt="">
+          <img class="title title-guochao" date-num='2' src="images/title_11.png"alt="">
+          <img class="title title-niling" date-num='3' src="images/title_15.png" alt ="">
+          <img class="title title-dule" date-num='4' src="images/title_05.png" alt ="">
+          <img class="title title-tonghao" date-num='5' src="images/title_19.png" alt ="">
+          <span class="tip">请上下滑动</span>
+     </div>
+     <div class="content">
+          <div buluo class="meili">
+               <img class="diwen-up" src="images/buluo_one/底纹上.5a193037.png" alt="">
+               <img class="diwen-mid" src="images/buluo_one/底纹中.1c28fae2.png" alt="">
+               <img class="dabiaoti" src="images/buluo_one/顶部大标题.bcba0f48.png" alt="">
+               <img class="jumin" src="images/buluo_one/居民资料.4d399362.png" alt="">
+               <img class="num two" src="images/buluo_one/下载 (1).png" alt="">
+               <img class="num seven" src="images/buluo_one/下载 (2).png" alt="">
+               <img class="num four" src="images/buluo_one/下载 (3).png" alt="">
+               <img class="b-one" src="images/buluo_one/bl.png" alt="">           
+               <img class="btn-one" src="images/buluo_one/btn (1).png" alt="">
+               <img class="btn-two" date-num='0' src="images/buluo_one/btn (2).png" alt="">
+               <img class="date" src="images/buluo_one/right.png" alt="">
+                  <div class="swiper-container">
+                   <div class="swiper-wrapper">
+                       <div class="swiper-slide one">
+                         <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"  src="images/buluo_one/下载02.png" alt="">
+                         <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/buluo_one/安瓶.d31ff095.png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                         <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/buluo_one/下载3.png" alt="">
+                         <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/buluo_one/美白仪.8edc2c80.png" alt="">
+                       </div>
+                       <div class="swiper-slide three">
+                         <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/buluo_one/护肤品t.a6eed0b5 (1).png" alt="">
+                         <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/buluo_one/护肤品.88f24e29.png" alt="">
+                       </div>
+                   </div>
+                   <!-- 如果需要分页器 -->
+                   <div class="swiper-pagination"></div>
+               </div>
+          </div>
+          <div class="buluo huimai">              
+               <img class="date" src="images/buluo_one/right.png" alt="">
+               <img class="btn-one" src="images/buluo_one/btn (1).png" alt="">
+               <img class="btn-two" date-num='1' src="images/buluo_one/btn (2).png" alt="">
+               <img class="diwen-up" src="images/2/底纹上.413148c0.png" alt="">
+               <img class="diwen-mid" src="images/2/底纹中.ebad9499.png" alt="">
+               <img class="dabiaoti" src="images/2/顶部大标题.8de499d3.png" alt="">
+               <img class="jumin" src="images/2/居民资料.aa7eca55.png" alt="">
+               <img class="num two" src="images/2/1.png" alt="">
+               <img class="num seven" src="images/2/下载 (1).png" alt="">
+               <img class="num four" src="images/2/下载 (2).png" alt="">
+               <img class="b-one" src="images/buluo_one/bl.png" alt="">
+               <div class="swiper-container">
+                   <div class="swiper-wrapper">
+                       <div class="swiper-slide one">
+                         <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/2/简易家具部落资料.0b03861e.png" alt="">
+                         <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/2/简易家具.4a85b105 (1).png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                         <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/2/纸巾抽部落资料.08c6bc5e.png" alt="">
+                         <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/2/纸巾抽.ab4732ab.png" alt="">
+                       </div>
+                       <div class="swiper-slide three">
+                         <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/2/厨房用具部落资料.203d07a0.png" alt="">
+                         <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/2/厨房用具.64a41e54.png" alt="">
+                       </div>
+                   </div>
+                   <!-- 如果需要分页器 -->
+                   <div class="swiper-pagination"></div>
+               </div>
+          </div>
+          <div class="buluo guochao">
+               <img class="diwen-mid" src="images/3/底纹中.038cea5f.png" alt="">               
+               <img class="date" src="images/buluo_one/right.png" alt="">
+               <img class="btn-one" src="images/buluo_one/btn (1).png" alt="">
+               <img class="btn-two" date-num='2' src="images/buluo_one/btn (2).png" alt="">
+               <img class="diwen-up" src="images/3/底纹上.339d6f7d (2).png" alt="">
+               <img class="dabiaoti" src="images/3/以国为潮.806d7ac8.png" alt="">
+               <img class="jumin" src="images/3/居民资料.9f3c2d24.png" alt="">
+               <img class="num two" src="images/3/下载 (1).png" alt="">
+               <img class="num seven" src="images/3/下载 (2).png" alt="">
+               <img class="num four" src="images/3/下载 (3).png" alt="">
+               <img class="b-one" src="images/buluo_one/bl.png" alt="">
+               <div class="swiper-container">
+                   <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/3/4000万text.3f8e7449.png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/3/国风服饰.59d2cb71.png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/3/2倍text.6ea85733.png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/3/老干妈卫衣.39f7b465.png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/3/70倍text.3b5c5c10.png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/3/老爹鞋.ba8ed22d.png" alt="">
+                       </div>
+                   </div>
+                   <!-- 如果需要分页器 -->
+                   <div class="swiper-pagination"></div>
+               </div>
+          </div>
+          <div class="buluo niling">             
+               <img class="date" src="images/buluo_one/right.png" alt="">
+               <img class="btn-one" src="images/buluo_one/btn (1).png" alt="">
+               <img class="btn-two" date-num='3' src="images/buluo_one/btn (2).png" alt="">
+               <img class="diwen-up" src="images/4/底纹上.b2486f1c.png" alt="">
+               <img class="diwen-mid" src="images/4/底纹中.42c8ea47.png" alt="">
+               <img class="dabiaoti" src="images/4/顶部大标题.3fad3a7c.png" alt="">
+               <img class="jumin" src="images/4/居民资料.aa7bb5ac.png" alt="">
+               <img class="num two" src="images/4/下载 (1).png" alt="">
+               <img class="num seven" src="images/4/下载 (2).png" alt="">
+               <img class="num four" src="images/4/下载 (3).png" alt="">
+               <img class="b-one" src="images/buluo_one/bl.png" alt="">
+               <div class="swiper-container">
+                   <div class="swiper-wrapper">
+                       <div class="swiper-slide one">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/4/下载 (4).png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/4/登山杖.92a74af3.png" alt="">
+                       </div>
+                       <div class="swiper-slide t">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/4/下载 (5).png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/4/血压计.65182a7b.png" alt="">
+                       </div>
+                       <div class="swiper-slide three">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/4/潮牌服饰部落资料.c3fd850f (2).png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/4/潮牌服饰.737f3330.png" alt="">
+                       </div>
+                   </div>
+                   <!-- 如果需要分页器 -->
+                   <div class="swiper-pagination"></div>
+               </div>
+          </div>
+          <div class="buluo dule">              
+               <img class="date" src="images/buluo_one/right.png" alt="">
+               <img class="btn-one" src="images/buluo_one/btn (1).png" alt="">
+               <img class="btn-two" date-num='4' src="images/buluo_one/btn (2).png" alt="">
+               <img class="diwen-up" src="images/5/底纹上.2e5efa5d.png" alt="">
+               <img class="diwen-mid" src="images/5/底纹中.5915f3ed.png" alt="">
+               <img class="dabiaoti" src="images/5/顶部大标题.a9390a7f.png" alt="">
+               <img class="jumin" src="images/5/居民资料.f2381c4e.png" alt="">
+               <img class="num two" src="images/5/下载 (2).png" alt="">
+               <img class="num seven" src="images/5/下载 (1).png" alt="">
+               <img class="num four" src="images/5/下载.png" alt="">
+               <img class="b-one" src="images/buluo_one/bl.png" alt="">
+               <div class="swiper-container">
+                   <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/5/下载 (8).png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/5/小火锅.92910d4b.png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/5/猫粮狗粮部落资料.dccb4b8d.png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/5/猫粮狗粮.ba2e5d5a.png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/5/投影仪部落资料.f2a75d15.png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/5/投影仪.6c887442.png" alt="">
+                       </div>
+                   </div>
+                   <!-- 如果需要分页器 -->
+                   <div class="swiper-pagination"></div>
+               </div>
+          </div>
+          <div class="buluo tonghao"> 
+               <img class="diwen-mid" src="images/6/底纹中.59526757.png" alt="">              
+               <img class="date" src="images/buluo_one/right.png" alt="">
+               <img class="btn-one" src="images/buluo_one/btn (1).png" alt="">
+               <img class="btn-two" date-num='5' src="images/buluo_one/btn (2).png" alt="">
+               <img class="diwen-up" src="images/6/底纹上.d15c2a36.png" alt="">
+               <img class="dabiaoti" src="images/6/顶部大标题.8d2ece2a.png" alt="">
+               <img class="jumin" src="images/6/居民资料.98e6d3b3.png" alt="">
+               <img class="num two" src="images/6/下载 (1).png" alt="">
+               <img class="num seven" src="images/6/下载.png" alt="">
+               <img class="num four" src="images/6/下载 (3).png" alt="">
+               <img class="b-one" src="images/buluo_one/bl.png" alt="">
+               <div class="swiper-container">
+                   <div class="swiper-wrapper">
+                       <div class="swiper-slide one">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/6/荧光棒部落资料.0183f0fa.png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/6/荧光棒.7d8474d6.png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/6/下载 (2).png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/6/盲盒玩具.510ad558.png" alt="">
+                       </div>
+                       <div class="swiper-slide three">
+                          <img class="info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" src="images/6/洛丽塔服饰部落资料.35fe97e6.png" alt="">
+                          <img class="goods ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" src="images/6/洛丽塔服饰.85c4fcb6.png" alt="">
+                       </div>
+                   </div>
+                   <!-- 如果需要分页器 -->
+                   <div class="swiper-pagination"></div>
+               </div>
+          </div>
+     </div>
+     <div class="result">
+        <div>
+          <img class="pic" src="images/buluo_one/美丽部落-结果页.adbac586.png" alt="">
+          <img date-num='0' class="back" src="images/2/fan.png" alt="">
+        </div>
+        <div>
+          <img class="pic" src="images/2/惠买部落-结果页.6610cb49.png" alt="">
+          <img date-num='1' class="back" src="images/2/fan.png" alt="">
+        </div>
+        <div>
+          <img class="pic" src="images/3/以国为潮-结果页.3deeddd1.png" alt="">
+          <img date-num='2' class="back" src="images/2/fan.png" alt="">
+        </div>
+        <div>
+          <img class="pic" src="images/4/逆龄部落-结果页.6592f64c.png" alt="">
+          <img date-num='3' class="back" src="images/2/fan.png" alt="">
+        </div>
+        <div>
+          <img class="pic" src="images/5/独乐部落-结果页.d0fbd40f.png" alt="">
+          <img date-num='4' class="back" src="images/2/fan.png" alt="">
+        </div>
+        <div>
+          <img class="pic" src="images/6/同好部落-结果页.127894d6.png" alt="">
+          <img date-num='5' class="back" src="images/2/fan.png" alt="">
+        </div>
+     </div>
+     <script src="js/jquery-3.4.1.js"></script>
+     <script src="js/swiper.min.js"></script>
+     <script src="js/swiper.animate1.0.3.min.js"></script>
+     <script>
+          $('.title').click(function(){
+               $('.home').fadeOut(1000).css('z-index',0)
+               $('.content').fadeIn(1000).css('z-index',1)
+               $('.content > div').eq($(this).attr('date-num')).css('z-index',1).css('opacity',1)
+          })
+          var prevRandom
+          $('.btn-one').click(function(){
+               var nextRandom = Math.floor(Math.random()*6)
+               if (prevRandom == nextRandom) {
+                    nextRandom = nextRandom + 1
+                    if(nextRandom > 5){
+                         nextRandom = 4
+                    }
+               }
+               $('.content > div').eq(nextRandom).css('z-index',1).css('opacity',1).siblings().css('z-index',0).css('opacity',0)
+               prevRandom = nextRandom
+          })
+          var mySwiper = new Swiper ('.swiper-container', {
+                  loop: true,
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+                  on:{
+                    init: function(){
+                      swiperAnimateCache(this); //隐藏动画元素 
+                      swiperAnimate(this); //初始化完成开始动画
+                    }, 
+                    slideChangeTransitionEnd: function(){ 
+                      swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                      //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+                    },
+                    slideChange : function(){
+                      var ind = this.activeIndex
+                      if(ind == 0){
+                          ind = 2
+                      }else if(ind==4){
+                        ind = 0
+                      }else{
+                        ind=ind - 1
+                      }                    
+                      $(this.$el).siblings('.num').eq(ind).css('opacity',1).siblings('.num').css('opacity',0.5)
+                    }
+                  }
+             })
+                $('.btn-two').click(function(){
+                  $('.result').fadeIn(500).css('z-index',1)
+                  $('.content').fadeOut(500).css('z-index',0)
+                  $('.content > div').eq($(this).attr('date-num')).css('z-index',0).css('opacity',0)
+                  $('.result > div').eq($(this).attr('date-num')).css('z-index',1).css('opacity',1)
+                })
+                $('.back').click(function(){
+                  $('.home').fadeIn(500).css('z-index',1)
+                  $('.result').fadeOut(500).css('z-index',0)
+                  $('.result > div').eq($(this).attr('date-num')).css('z-index',0).css('opacity',0)
+                })
+     </script>
+</body>
+</html>

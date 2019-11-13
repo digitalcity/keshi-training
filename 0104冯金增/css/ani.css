@@ -1,0 +1,94 @@
+@keyframes shake1{
+	0%{
+		background-image: url('../images/plus_flash_normal.png');
+	}
+	50%{
+		background-image: url('../images/plus_flash.png');
+	}
+	100%{
+		background-image: url('../images/plus_flash_normal.png');
+	}
+}
+@keyframes shake2{
+	0%{
+		background-image: url('../images/plus_flash.png');
+	}
+	50%{
+		background-image: url('../images/plus_flash_normal.png');
+	}
+	100%{
+		background-image: url('../images/plus_flash.png');
+	}
+}
+@keyframes spray{
+	0%{
+		background-image: url('../images/steam_full-start.png');
+	}
+	20%{
+		background-image: url('../images/steam_full-001.png');
+	}
+	40%{
+		background-image: url('../images/steam_full-002.png');
+	}
+	60%{
+		background-image: url('../images/steam_full-003.png');
+	}
+	80%{
+		background-image: url('../images/steam_full-004.png');
+	}
+}
+@keyframes change{
+	0%{background-image: url('../images/Suit_frame001.png');}
+	25%{background-image: url('../images/Suit_frame002.png');}
+	50%{background-image: url('../images/Suit_frame003.png');}
+	75%{background-image: url('../images/Suit_frame004.png');}
+	100%{background-image: url('../images/Suit_frame005.png');}
+}
+.asd{
+	animation: spray 1s infinite;
+	background-repeat: no-repeat;
+}
+.rl-1,.rl-2,.rl-4,.rl-6{
+	animation: shake1 1s infinite;
+	background-repeat: no-repeat;
+}
+.rl-3,.rl-5{
+	animation: shake2 1s infinite;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.gray .pic{
+	animation: change 1.5s alternate infinite;
+	background-repeat: no-repeat;
+}
+.now:hover{
+	background-position: 0 -172px;
+	color:#eb2131;
+}
+.text4 a:hover{
+	background-position: 0 -43px;
+}
+.prof2:hover{
+	background-position: -188px 0;
+}
+.next2:hover{
+	background-position: -218px 0;
+}
+.icon2 a:hover{
+	background-position: 0 -777px;
+	color:#EC008C;
+}
+.icon a:hover{
+	background-position: 0 -476px;
+	color:red;
+}
+.next:hover{
+	background-position: -95px 0;
+}
+.prof:hover{
+	background-position: -64px 0;
+}
+.aside .active,.aside li:hover{
+	background-color:transparent;
+	color:#000;
+}
